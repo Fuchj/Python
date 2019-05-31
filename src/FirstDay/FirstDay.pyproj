@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>75dbfb8e-96a8-47b5-881b-374cf1c478cf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FirstDay.py</StartupFile>
+    <StartupFile>函数\FirstMethod.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FirstDay.py" />
+    <Compile Include="函数\FirstMethod.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="列表练习\FirstDay.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="函数\" />
+    <Folder Include="列表练习\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

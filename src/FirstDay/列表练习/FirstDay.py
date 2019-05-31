@@ -1,4 +1,5 @@
 
+"""列表练习"""
 #name = "Hello Python Crash Course world!"
 
 #print(name.title())
@@ -57,10 +58,44 @@ arry1=list(range(2,11,2))
 print(arry1)
 
 
-#把1~11范围中的数字的平方存放到列表中
+#使用列表解析把1~11范围中的数字的平方存放到列表中
 arry2= [value**2 for value in range(1,11)]
 print(arry2)
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+#列表的切片操作
+arry3=[0,"one",2,"three",4,"five"]
+print(arry3)
+print(arry3[0:3]) #打印该列表的一个切片，输出也是一个列表，其中包含前单个索引的值
+print(arry3[:3])
+print(arry3[2:])
+print(arry3[-3:-1])#倒数第三个元素到倒数第一个
+
+for x in arry3[0:3]:
+    print(x)
+#列表复制
+print("----------列表复制","arry4-------------")
+arry4 = ['1', '2', '3','4']
+newarry4 = arry4[:]
+newarry4two= arry4
+print("arry4:")
+print(arry4)
+print("\nnewarry4 :")
+print(newarry4)
+print("\nnewarry4two :")
+print(newarry4two)
+
+
+arry4.append("arry4")
+newarry4.append("new")
+newarry4two.append("ddddd")
+print("arry4:")
+print(arry4)
+print("\nnewarry4 :")
+print(newarry4)
+print("\nnewarry4two :")
+print(newarry4two)
+
 
 
 
