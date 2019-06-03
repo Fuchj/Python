@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>75dbfb8e-96a8-47b5-881b-374cf1c478cf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>函数\DiaoYongMethod.py</StartupFile>
+    <StartupFile>类\Dog.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="类\Dog.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="函数\DiaoYongMethod.py">
       <SubType>Code</SubType>
     </Compile>
@@ -30,6 +33,7 @@
     <Compile Include="列表练习\FirstDay.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="类\" />
     <Folder Include="函数\" />
     <Folder Include="列表练习\" />
   </ItemGroup>
