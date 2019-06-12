@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>75dbfb8e-96a8-47b5-881b-374cf1c478cf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>日志\file_reader.py</StartupFile>
+    <StartupFile>文件读取\file_reader.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="日志\file_reader.py">
+    <Compile Include="文件读取\file_reader.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="日志\module1.py">
@@ -45,13 +45,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="文件读取\" />
     <Folder Include="日志\" />
     <Folder Include="类\" />
     <Folder Include="函数\" />
     <Folder Include="列表练习\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="日志\aa.txt" />
+    <Content Include="文件读取\aa.txt" />
+    <Content Include="文件读取\bb.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
