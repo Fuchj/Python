@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FirstDay", "FirstDay\FirstD
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FlaskWebProject1", "FlaskWebProject1\FlaskWebProject1.pyproj", "{A67AF5B8-ED25-427E-8241-42B484CC1491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{1EA67D8C-5913-4710-BB65-E901BA1D1E6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{A67AF5B8-ED25-427E-8241-42B484CC1491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A67AF5B8-ED25-427E-8241-42B484CC1491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A67AF5B8-ED25-427E-8241-42B484CC1491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EA67D8C-5913-4710-BB65-E901BA1D1E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA67D8C-5913-4710-BB65-E901BA1D1E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA67D8C-5913-4710-BB65-E901BA1D1E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA67D8C-5913-4710-BB65-E901BA1D1E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
