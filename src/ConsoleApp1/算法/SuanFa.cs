@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ConsoleApp1
 {
     public class SuanFa
     {
+        #region 二分查找
         /// <summary>
         /// 二分查找每个数
         /// </summary>
@@ -19,10 +21,10 @@ namespace ConsoleApp1
             //查找范围的索引上限
             var high_index = list.Length - 1;
             //只要范围没有缩小到只包含一个元素
-            while (low_index <= high_index) 
+            while (low_index <= high_index)
             {
                 num += 1;//没查询一次，次数加1
-                var mid = (low_index + high_index)/2;//2//向下取整 
+                var mid = (low_index + high_index) / 2;//2//向下取整 
                 var guess = list[mid];//猜测的值
                 if (guess == item)//当猜测的值和要查询的值相等时返回元素索引
                 {
@@ -39,6 +41,8 @@ namespace ConsoleApp1
             }
             return $"值在数组中不存在,查询次数为{num}";
         }
+        #endregion
+        #region 选择排序
         /// <summary>
         /// 查找最小值的索引
         /// </summary>
@@ -55,9 +59,27 @@ namespace ConsoleApp1
                     min_num = list[i];
                     min_index = i;
                 }
-
             }
             return min_index;
         }
+        /// <summary>
+        /// 选择排序(从小到大)
+        /// </summary>
+        /// <param name="arry"></param>
+        /// <returns></returns>
+        public static int[] SelectSortMethod(int[] arry)
+        {
+            List<int> Arrylist = arry.ToList();
+            List<int> ResultArry = new List<int>();
+            while (Arrylist.Count > 0)
+            {
+                //找出数组中值最小的索引
+                var min_index = FindSmallest(Arrylist.ToArray());
+                ResultArry.Add(Arrylist[min_index]);
+                Arrylist.RemoveAt(min_index);
+            }
+            return ResultArry.ToArray();
+        }
+        #endregion
     }
 }

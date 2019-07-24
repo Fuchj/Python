@@ -2,7 +2,10 @@
 my_list = [0,1, 2,3,4, 5,6, 7,8, 9,10,11]
 my_list1=[11,10,9,8,7,6,5,4,3,2,1,0]
 def binary_search(list, item):
-    '''二分查找'''
+    '''二分查找 
+    list:数组列表
+    item：要查询的值    
+    '''
     num=0#定义查询需要的次数
     low_index = 0 #查找范围的索引下限
     high_index = len(list)-1#查找范围的索引上限
@@ -38,3 +41,4 @@ def selectSortMethod(arry):
         newArry.append(arry.pop(smallest))
     return newArry 
 print(selectSortMethod(my_list1));
+print (binary_search(my_list, 1))
