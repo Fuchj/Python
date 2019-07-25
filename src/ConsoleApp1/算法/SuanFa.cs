@@ -81,5 +81,41 @@ namespace ConsoleApp1
             return ResultArry.ToArray();
         }
         #endregion
+        #region 快速排序
+        /// <summary>
+        /// 快速排序
+        /// </summary>
+        /// <param name="Arrylist">要排序的集合</param>
+        /// <returns></returns>
+        public static List<int> KuaiPaiMethod(List<int> Arrylist)
+        {
+           
+            if (Arrylist.Count < 2)
+            {
+                return Arrylist;
+            }
+            //比基准值小的数据集合
+            List<int> MinArry = new List<int>();
+            //比基准值大的数据集合
+            List<int> MaxArry = new List<int>();
+            int label_value = Arrylist[0];//培训基准值
+            for (int i = 1; i < Arrylist.Count; i++)
+            {
+                if (Arrylist[i] <= label_value)
+                {
+                    MinArry.Add(Arrylist[i]);
+                }
+                else
+                {
+                    MaxArry.Add(Arrylist[i]);
+                }
+            }          
+            var result = KuaiPaiMethod(MinArry);
+            var MaxSum = KuaiPaiMethod(MaxArry);
+            result.Add(label_value);
+            result.AddRange(MaxSum);
+            return result;
+        }
+        #endregion
     }
 }
