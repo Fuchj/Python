@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>75dbfb8e-96a8-47b5-881b-374cf1c478cf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>算法\二分查找\erfen.py</StartupFile>
+    <StartupFile>算法\erfen.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,7 +27,7 @@
     <Compile Include="日志\module1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="算法\二分查找\erfen.py">
+    <Compile Include="算法\erfen.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="类\Car.py">
@@ -51,7 +51,6 @@
     <Folder Include="算法\" />
     <Folder Include="文件读取\" />
     <Folder Include="日志\" />
-    <Folder Include="算法\二分查找\" />
     <Folder Include="类\" />
     <Folder Include="函数\" />
     <Folder Include="列表练习\" />

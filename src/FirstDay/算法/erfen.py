@@ -1,4 +1,3 @@
-
 def binary_search(list, item):
     '''二分查找 
     list:数组列表
@@ -19,7 +18,6 @@ def binary_search(list, item):
             low_index = mid + 1
 
     return "值在数组中不存在,查询次数为"+str(num) 
-#print (binary_search(my_list, 1))
 def findSmallest(arr):
     '''查找最小值元素的索引'''
     smallest = arr[0]
@@ -38,9 +36,6 @@ def selectSortMethod(arry):
         smallest = findSmallest(arry)
         newArry.append(arry.pop(smallest))
     return newArry 
-#print(selectSortMethod(my_list1));
-#print (binary_search(my_list, 1))
-
 def countdown(i):
     '''递归举例方法'''
     print (i)
@@ -69,13 +64,13 @@ def KuaiPai(arry):
 
 #my_list = [10,11, 12,13,14, 15,16, 17,18, 19,20,21]
 #my_list1=[21,20,19,18,17,16,15,14,13,12,11,10]
-my_list2=[11,10,11,18,15,16,15,14,13,12,20,10]
+#my_list2=[11,10,11,18,15,16,15,14,13,12,20,10]
 #print(KuaiPai(my_list))
 #print(KuaiPai(my_list1))
-print(KuaiPai(my_list2))
-try:
+#print(KuaiPai(my_list2))
+#try:
     #countdown(10)
-    print("结束-----------------------------------------------")
-except Exception as e:
-    print('Invalid input:', e)
-    print ('Please try again-----------------------------------------------')
+    #print("结束-----------------------------------------------")
+#except Exception as e:
+    #print('Invalid input:', e)
+    #print ('Please try again-----------------------------------------------')

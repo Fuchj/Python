@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace ConsoleApp1
 {
@@ -19,6 +20,8 @@ namespace ConsoleApp1
             {
                 Console.WriteLine($"{item}");
             }
+            string a = "";
+            StringBuilder str = new StringBuilder();
             //Console.WriteLine();
             //Console.WriteLine("--------------------------------------");
             //foreach (var item in a)
