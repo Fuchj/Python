@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>75dbfb8e-96a8-47b5-881b-374cf1c478cf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>算法\erfen.py</StartupFile>
+    <StartupFile>TestMethod.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,13 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="TestMethod.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="文件读取\file_reader.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="日志\module1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="算法\erfen.py">
+    <Compile Include="SuanFa\algorithm.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="类\Car.py">
@@ -36,10 +39,10 @@
     <Compile Include="类\Dog.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="函数\DiaoYongMethod.py">
+    <Compile Include="Method\DiaoYongMethod.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="函数\FirstMethod.py">
+    <Compile Include="Method\FirstMethod.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="列表练习\FirstDay.py" />
@@ -48,11 +51,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="算法\" />
+    <Folder Include="SuanFa\" />
     <Folder Include="文件读取\" />
     <Folder Include="日志\" />
     <Folder Include="类\" />
-    <Folder Include="函数\" />
+    <Folder Include="Method\" />
     <Folder Include="列表练习\" />
   </ItemGroup>
   <ItemGroup>

@@ -61,16 +61,3 @@ def KuaiPai(arry):
     #把几个数组直接相加，合并为一个数组
     return KuaiPai(min_arry)+[lable_num]+KuaiPai(max_arry)
 
-
-#my_list = [10,11, 12,13,14, 15,16, 17,18, 19,20,21]
-#my_list1=[21,20,19,18,17,16,15,14,13,12,11,10]
-#my_list2=[11,10,11,18,15,16,15,14,13,12,20,10]
-#print(KuaiPai(my_list))
-#print(KuaiPai(my_list1))
-#print(KuaiPai(my_list2))
-#try:
-    #countdown(10)
-    #print("结束-----------------------------------------------")
-#except Exception as e:
-    #print('Invalid input:', e)
-    #print ('Please try again-----------------------------------------------')

@@ -20,8 +20,8 @@ namespace ConsoleApp1
             {
                 Console.WriteLine($"{item}");
             }
-            string a = "";
-            StringBuilder str = new StringBuilder();
+            //string a = "";
+            //StringBuilder str = new StringBuilder();
             //Console.WriteLine();
             //Console.WriteLine("--------------------------------------");
             //foreach (var item in a)
